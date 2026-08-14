@@ -1,0 +1,24 @@
+void main(){
+  greetEveryone('Alice');
+  greetEveryone('Bob', 'How are you?');
+
+  greetEveryoneArrow('Charlie');
+  greetEveryoneArrow('David', 'Nice to meet you!');
+}
+
+// funcion normal
+greetEveryone(String name, [String? message]) {
+  print('Hello $name');
+  if (message != null) {
+    print(message);
+  }
+}
+
+// funcion flecha
+greetEveryoneArrow(String name, [String? message]) => 
+print('Hello $name ${message ?? ''}');
+
+int add(int a, int b) => a + b;
+
+//hacer un capo opcional
+int addOptional(int a, [int b = 0]) => a + b;

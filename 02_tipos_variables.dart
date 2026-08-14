@@ -13,5 +13,6 @@ void main(){
      $age
      $isAlive
      $types
+     $myVariable
 """);
 }
